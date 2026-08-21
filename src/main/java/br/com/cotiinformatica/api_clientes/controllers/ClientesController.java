@@ -97,7 +97,7 @@ public class ClientesController {
     }
 
     @GetMapping
-    public ResponseEntity<?> getByNome(@RequestParam String nome, @RequestParam String cpf) {
+    public ResponseEntity<?> getByNome(@RequestParam String nome) {
         try{
             var clientes = clienteRepository.obterPorNome(nome);
 
